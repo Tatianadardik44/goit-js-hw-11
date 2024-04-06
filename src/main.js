@@ -12,7 +12,7 @@ function handleSubmit(event) {
     const names = event.target.elements.designation.value.trim();
     objGallery(names)
         .then(data => {
-            if (data.totalHits === 0 || names === '') {
+            if (names === '') {
                 iziToast.show({
                     message: 'Sorry, there are no images matching your search query. Please try again!',
                     messageColor: 'white',
