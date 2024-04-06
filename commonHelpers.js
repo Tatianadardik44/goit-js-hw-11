@@ -13,5 +13,5 @@ import{S as f,i as m}from"./assets/vendor-8c59ed88.js";(function(){const r=docum
 
         </div>
         </a>
-        </li>`).join("");n.insertAdjacentHTML("beforeend",r),new f(".gallery a",{captionsData:"alt",captionDelay:250}).refresh()}const h=document.querySelector(".input-field");h.addEventListener("submit",g);function g(o){o.preventDefault(),n.innerHTML="";const r=o.target.elements.designation.value.trim();p(r).then(i=>{i.totalHits===0||r===""?m.show({message:"Sorry, there are no images matching your search query. Please try again!",messageColor:"white",backgroundColor:"red",position:"topRight"}):d(i.hits)}),o.target.reset()}
+        </li>`).join("");n.insertAdjacentHTML("beforeend",r),new f(".gallery a",{captionsData:"alt",captionDelay:250}).refresh()}const h=document.querySelector(".input-field");h.addEventListener("submit",g);function g(o){o.preventDefault(),n.innerHTML="";const r=o.target.elements.designation.value.trim();p(r).then(i=>{r===""?m.show({message:"Sorry, there are no images matching your search query. Please try again!",messageColor:"white",backgroundColor:"red",position:"topRight"}):d(i.hits)}),o.target.reset()}
 //# sourceMappingURL=commonHelpers.js.map
