@@ -18,14 +18,14 @@ export function createMarkup(data) {
         <img 
         class="gallery-image"
         src="${webformatURL}"
-        alt="${tags}"
+        alt="${tags}"/>
         <div class="image-information">
         <p>Likes: ${likes}</p>
         <p>Views: ${views}</p>
         <p>Comments: ${comments}</p>
         <p>Downloads: ${downloads}</p>
-
         </div>
+        
         </a>
         </li>`;
        
