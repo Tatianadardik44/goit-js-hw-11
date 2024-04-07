@@ -19,11 +19,20 @@ function handleSubmit(event) {
                     message: 'Sorry, there are no images matching your search query. Please try again!',
                     messageColor: 'white',
                     backgroundColor: 'red',
-                    position: 'bottomCenter'
-
+                    position: 'bottomCenter',
+                    iconColor: 'white'
                 });
             } else {
-                  loaderElement.classList.add(".hidden");
+                loaderElement.classList.add(".hidden");
+                iziToast.success({
+                    iconColor: 'yellow',
+                    message: 'Enjoy watching!',
+                    position: 'topRight',
+                    backgroundColor: 'blue',
+                    messageColor: 'yellow'
+                
+                
+});
                 createMarkup(data);  
             }
         });
