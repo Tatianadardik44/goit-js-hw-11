@@ -4,14 +4,14 @@ import{S as m,i as f}from"./assets/vendor-8c59ed88.js";(function(){const r=docum
         <img 
         class="gallery-image"
         src="${i}"
-        alt="${t}"
+        alt="${t}"/>
         <div class="image-information">
         <p>Likes: ${a}</p>
         <p>Views: ${c}</p>
         <p>Comments: ${u}</p>
         <p>Downloads: ${d}</p>
-
         </div>
+        
         </a>
         </li>`).join("");l.insertAdjacentHTML("beforeend",r),new m(".gallery a",{captionsData:"alt",captionDelay:250}).refresh()}const n=document.querySelector(".loader"),g=document.querySelector(".input-field");g.addEventListener("submit",y);function y(o){o.preventDefault(),l.innerHTML="",n.classList.remove(".hidden");const r=o.target.elements.designation.value.trim();p(r).then(s=>{r===""?(n.classList.add(".hidden"),f.show({message:"Sorry, there are no images matching your search query. Please try again!",messageColor:"white",backgroundColor:"red",position:"topRight"})):(n.classList.add(".hidden"),h(s))}),o.target.reset()}
 //# sourceMappingURL=commonHelpers.js.map
