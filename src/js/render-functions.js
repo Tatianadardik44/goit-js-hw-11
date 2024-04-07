@@ -2,7 +2,7 @@ import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 export const list = document.querySelector(".gallery-nav");
 export function createMarkup(data) {
-    const markup = data
+    return data
     .map(({
         webformatURL,
         largeImageURL,
@@ -31,7 +31,7 @@ export function createMarkup(data) {
        
     })
         .join("");
-    list.insertAdjacentHTML("beforeend", markup);  
+    
 
 const lightbox = new SimpleLightbox('.gallery a', {  captionsData: `alt`,
   captionDelay: 250,

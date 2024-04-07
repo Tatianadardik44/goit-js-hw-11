@@ -21,7 +21,7 @@ function handleSubmit(event) {
 
                 });
             } else {
-                createMarkup(data.hits);
+                list.insertAdjacentHTML("beforeend", createMarkup(data.hits));  
             }
         });
     event.target.reset();
