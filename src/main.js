@@ -24,7 +24,7 @@ function handleSubmit(event) {
                 });
             } else {
                   loaderElement.classList.add(".hidden");
-                list.insertAdjacentHTML("beforeend", createMarkup(data.hits));  
+                createMarkup(data);  
             }
         });
     event.target.reset();
